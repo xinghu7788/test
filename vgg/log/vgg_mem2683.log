@@ -1,0 +1,269 @@
+==33887== NVPROF is profiling process 33887, command: python vgg_generator_RT.py 2683
+==33887== Profiling application: python vgg_generator_RT.py 2683
+==33887== Profiling result:
+"Device","Context","Stream","Kernel","dram_write_transactions","dram_read_transactions"
+,,,,,
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::sigmoid_func<float>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::sigmoid_func<float>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",21189,489
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=1, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",18425,74
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=2, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",2525,80
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=3, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",124,88
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=4, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",28,96
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=5, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",32,112
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=6, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",20,128
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=7, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",16,136
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=8, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",12,160
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=1, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",4,72
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=2, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",4,80
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=3, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",0,88
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=4, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",52,96
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=5, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",72,112
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=6, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",92,128
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=7, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",52,144
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=8, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",8,152
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=1>, fused::KpqkPtrWriter<float, int=1, int=1>, float, float, int=4, int=4, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=1, int=1Type>, float)",1347719,447181
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=2>, fused::KpqkPtrWriter<float, int=1, int=2>, float, float, int=3, int=5, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=2, int=1Type>, float)",1522567,552303
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=1>, fused::KpqkPtrWriter<float, int=1, int=1>, float, float, int=5, int=5, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=1, int=1Type>, float)",1487705,527696
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=4>, fused::KpqkPtrWriter<float, int=1, int=4>, float, float, int=5, int=3, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=4, int=1Type>, float)",1826656,721067
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=2>, fused::KpqkPtrWriter<float, int=1, int=2>, float, float, int=2, int=5, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=2, int=1Type>, float)",1466502,503070
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=2>, fused::KpqkPtrWriter<float, int=1, int=2>, float, float, int=5, int=2, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=2, int=1Type>, float)",1561936,559061
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=1>, fused::KpqkPtrWriter<float, int=1, int=1>, float, float, int=4, int=4, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=1, int=1Type>, float)",1398912,446286
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=1>, fused::KpqkPtrWriter<float, int=1, int=1>, float, float, int=3, int=4, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=1, int=1Type>, float)",1314755,325767
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=1>, fused::KpqkPtrWriter<float, int=1, int=1>, float, float, int=2, int=4, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=1, int=1Type>, float)",1239956,228608
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=2>, fused::KpqkPtrWriter<float, int=1, int=2>, float, float, int=2, int=4, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=2, int=1Type>, float)",1465431,502809
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=2>, fused::KpqkPtrWriter<float, int=1, int=2>, float, float, int=2, int=5, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=2, int=1Type>, float)",1477772,511122
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",2599,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_xregs_large_nn_v1",854275,21898
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",3180,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x32_relu_small_nn_v1",810665,4233
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",2568,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_medium_nn_v1",801540,4967
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",2400,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_xregs_large_nn_v1",799809,7809
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",2532,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_medium_nn_v1",799959,8907
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",2500,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_small_nn_v1",792970,14168
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",3316,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_small_nn_v1",808702,6314
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::implicit_convolve_sgemm<float, float, int=1024, int=6, int=7, int=3, int=3, int=5, int=1, bool=1, bool=0, bool=1>(int, int, int, float const *, int, float*, cudnn::detail::implicit_convolve_sgemm<float, float, int=1024, int=6, int=7, int=3, int=3, int=5, int=1, bool=1, bool=0, bool=1>*, kernel_conv_params, int, float, float, int, float, float, int, int)",1659263,373260
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",859803,800121
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",809012,800904
+"Tesla V100-DGXS-16GB (0)","1","23","cudnn::gemm::computeOffsetsKernel(cudnn::gemm::ComputeOffsetsParams)",2289,84
+"Tesla V100-DGXS-16GB (0)","1","23","volta_scudnn_128x128_relu_small_nn_v1",786432,13759
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",811627,801937
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",808692,800650
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",1776,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x32_relu_small_nn_v1",283290,1421112
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",1068,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_medium_nn_v1",295724,1493646
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",1316,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_medium_nn_v1",302896,1409820
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",1256,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_small_nn_v1",301824,1411958
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",1316,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_small_nn_v1",294798,1556566
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>(int, int, int, float const *, int, float*, cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>*, kernel_conv_params, int, float, float, int, float, float, int, int)",428827,1432680
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",61040,155022
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",137134,160
+"Tesla V100-DGXS-16GB (0)","1","23","cudnn::gemm::computeOffsetsKernel(cudnn::gemm::ComputeOffsetsParams)",1633,76
+"Tesla V100-DGXS-16GB (0)","1","23","volta_scudnn_128x64_relu_small_nn_v1",180112,1515634
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",76380,79684
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",135925,160
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=1, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",64580,110718
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=2, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",40360,74475
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=3, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",25678,53532
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=4, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",22563,51638
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=5, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",20922,50860
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=6, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",20976,45027
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=7, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",17651,44808
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=8, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",21407,46022
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=1, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",19946,62381
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=2, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",20455,59117
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=3, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",21907,55748
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=4, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",22338,52143
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=5, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",19678,52560
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=6, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",19927,48140
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=7, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",21820,45359
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=8, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",21247,43256
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=1>, fused::KpqkPtrWriter<float, int=1, int=1>, float, float, int=3, int=4, int=1, int=7, int=7, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=1, int=1Type>, float)",228500,372944
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",724,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_xregs_large_nn_v1",217347,363176
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",688,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_medium_nn_v1",221372,363211
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",760,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_xregs_large_nn_v1",218783,363219
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",748,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_medium_nn_v1",221537,363163
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>(int, int, int, float const *, int, float*, cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>*, kernel_conv_params, int, float, float, int, float, float, int, int)",222013,288199
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",0,194
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",0,160
+"Tesla V100-DGXS-16GB (0)","1","23","cudnn::gemm::computeOffsetsKernel(cudnn::gemm::ComputeOffsetsParams)",1332,76
+"Tesla V100-DGXS-16GB (0)","1","23","volta_scudnn_128x64_relu_medium_nn_v1",217452,284453
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",0,194
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",0,160
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",808,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_xregs_large_nn_v1",231128,195937
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",588,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_medium_nn_v1",230647,202471
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",736,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_xregs_large_nn_v1",230132,202481
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",588,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_medium_nn_v1",231297,202423
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>(int, int, int, float const *, int, float*, cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>*, kernel_conv_params, int, float, float, int, float, float, int, int)",86576,112336
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",128,156
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",44,160
+"Tesla V100-DGXS-16GB (0)","1","23","cudnn::gemm::computeOffsetsKernel(cudnn::gemm::ComputeOffsetsParams)",512,76
+"Tesla V100-DGXS-16GB (0)","1","23","volta_scudnn_128x64_relu_medium_nn_v1",39837,59364
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",4668,162
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",40,160
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=1>, fused::KpqkPtrWriter<float, int=1, int=1>, float, float, int=4, int=4, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=1, int=1Type>, float)",89810,34503
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=2>, fused::KpqkPtrWriter<float, int=1, int=2>, float, float, int=3, int=5, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=2, int=1Type>, float)",90740,22421
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=1>, fused::KpqkPtrWriter<float, int=1, int=1>, float, float, int=5, int=5, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=1, int=1Type>, float)",69333,21612
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=4>, fused::KpqkPtrWriter<float, int=1, int=4>, float, float, int=5, int=3, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=4, int=1Type>, float)",82195,24762
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=2>, fused::KpqkPtrWriter<float, int=1, int=2>, float, float, int=2, int=5, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=2, int=1Type>, float)",68232,18683
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=2>, fused::KpqkPtrWriter<float, int=1, int=2>, float, float, int=5, int=2, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=2, int=1Type>, float)",84803,23722
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=1>, fused::KpqkPtrWriter<float, int=1, int=1>, float, float, int=4, int=4, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=1, int=1Type>, float)",68624,18613
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=1>, fused::KpqkPtrWriter<float, int=1, int=1>, float, float, int=3, int=4, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=1, int=1Type>, float)",79692,19899
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=1>, fused::KpqkPtrWriter<float, int=1, int=1>, float, float, int=2, int=4, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=1, int=1Type>, float)",70127,18448
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=2>, fused::KpqkPtrWriter<float, int=1, int=2>, float, float, int=2, int=4, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=2, int=1Type>, float)",79231,19325
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=2>, fused::KpqkPtrWriter<float, int=1, int=2>, float, float, int=2, int=5, int=1, int=5, int=5, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=2, int=1Type>, float)",68261,18182
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",412,97
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_xregs_large_nn_v1",202925,106435
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",532,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x32_relu_small_nn_v1",230212,135643
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",536,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_medium_nn_v1",229766,135802
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",572,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_xregs_large_nn_v1",229286,136028
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",536,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_medium_nn_v1",230021,135738
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",536,97
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_small_nn_v1",229620,135701
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",536,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_small_nn_v1",228721,135747
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>(int, int, int, float const *, int, float*, cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>*, kernel_conv_params, int, float, float, int, float, float, int, int)",77547,26386
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",8099,188
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",38,160
+"Tesla V100-DGXS-16GB (0)","1","23","cudnn::gemm::computeOffsetsKernel(cudnn::gemm::ComputeOffsetsParams)",469,72
+"Tesla V100-DGXS-16GB (0)","1","23","volta_scudnn_128x64_relu_small_nn_v1",49950,21708
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",12271,152
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",8,160
+"Tesla V100-DGXS-16GB (0)","1","23","void fused::fusedConvolutionReluKernel<fused::SrcChwcPtr_FltTex_Reader<float, int=1, int=1, int=1>, fused::KpqkPtrWriter<float, int=1, int=1>, float, float, int=3, int=4, int=1, int=7, int=7, int=1, int=1>(fused::ConvolutionParams<floatSrcType, int=1, int=1Type>, float)",28343,43525
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",456,102
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_xregs_large_nn_v1",194696,134463
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",528,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_medium_nn_v1",229984,151616
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",524,97
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_xregs_large_nn_v1",230662,151626
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",524,97
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_medium_nn_v1",230878,151568
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>(int, int, int, float const *, int, float*, cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>*, kernel_conv_params, int, float, float, int, float, float, int, int)",40978,43060
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",2535,156
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",278,144
+"Tesla V100-DGXS-16GB (0)","1","23","cudnn::gemm::computeOffsetsKernel(cudnn::gemm::ComputeOffsetsParams)",500,72
+"Tesla V100-DGXS-16GB (0)","1","23","volta_scudnn_128x64_relu_medium_nn_v1",18887,17462
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",5642,152
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",8,56
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",448,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x32_relu_small_nn_v1",86453,2952
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",424,0
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_medium_nn_v1",65071,801
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",408,0
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_medium_nn_v1",73601,736
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",680,0
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_small_nn_v1",78561,720
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",615,0
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_small_nn_v1",64495,752
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>(int, int, int, float const *, int, float*, cudnn::detail::implicit_convolve_sgemm<float, float, int=128, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>*, kernel_conv_params, int, float, float, int, float, float, int, int)",72313,608
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",30083,152
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",36054,160
+"Tesla V100-DGXS-16GB (0)","1","23","cudnn::gemm::computeOffsetsKernel(cudnn::gemm::ComputeOffsetsParams)",476,72
+"Tesla V100-DGXS-16GB (0)","1","23","volta_scudnn_128x64_relu_small_nn_v1",40890,754
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",33657,0
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",35728,0
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",232,100
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x32_relu_small_nn_v1",25413,1725
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",140,0
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_medium_nn_v1",13604,4208
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",192,0
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_medium_nn_v1",11376,1694
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",48,0
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x32_relu_interior_nn_v1",2170,720
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",40,0
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_small_nn_v1",3396,816
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",0,0
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_small_nn_v1",3757,815
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",0,0
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x64_relu_interior_nn_v1",3072,790
+"Tesla V100-DGXS-16GB (0)","1","23","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",0,0
+"Tesla V100-DGXS-16GB (0)","1","23","trt_volta_scudnn_128x128_relu_interior_nn_v1",3636,774
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::implicit_convolve_sgemm<float, float, int=1024, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>(int, int, int, float const *, int, float*, cudnn::detail::implicit_convolve_sgemm<float, float, int=1024, int=5, int=5, int=3, int=3, int=3, int=1, bool=1, bool=0, bool=1>*, kernel_conv_params, int, float, float, int, float, float, int, int)",351,592
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",48,152
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",152,144
+"Tesla V100-DGXS-16GB (0)","1","23","cudnn::gemm::computeOffsetsKernel(cudnn::gemm::ComputeOffsetsParams)",100,72
+"Tesla V100-DGXS-16GB (0)","1","23","volta_scudnn_128x64_relu_interior_nn_v1",826,736
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",140,0
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",80,0
+"Tesla V100-DGXS-16GB (0)","1","23","void im2col4d_kernel<float, int>(im2col4d_params, cudnnConvolutionStruct, cudnnTensor4dStruct, float const *, float*, int)",23144,623
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::explicit_convolve_sgemm<float, int, int=1024, int=5, int=5, int=3, int=3, int=3, int=0, bool=1>(int, int, int, float const *, int, float const , int, cudnn::detail::explicit_convolve_sgemm<float, int, int=1024, int=5, int=5, int=3, int=3, int=3, int=0, bool=1>*, kernel_conv_params, int, int, float, float, int, float const *, float const *)",808,496
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",84,0
+"Tesla V100-DGXS-16GB (0)","1","23","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::relu_func<float, cudnnNanPropagation_t=1, bool=0>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",72,0
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=1, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",37280,68
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=2, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",9864,80
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=3, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",1848,96
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=4, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",534,106
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=5, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",480,120
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=6, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",508,128
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=7, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",68,144
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=8, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",32,160
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=1, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",8,72
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=2, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",16,80
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=3, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",0,96
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=4, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",0,104
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=5, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",4,120
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=6, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",4,136
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=7, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",260,144
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=8, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",168,160
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=1, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",6397,44
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=2, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",88,0
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=3, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",40,0
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=4, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",24,8
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=5, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",148,0
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=6, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",24,16
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=7, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",216,144
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=8, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",140,160
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=1, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",80,32
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=2, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",80,28
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=3, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",156,28
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=4, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",100,0
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=5, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",48,0
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=6, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",64,0
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=7, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",44,8
+"Tesla V100-DGXS-16GB (0)","1","23","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=16, int=128, int=8, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",124,48
+"Tesla V100-DGXS-16GB (0)","1","23","void gemv2T_kernel_val<float, float, float, int=128, int=16, int=2, int=4, bool=0>(int, int, float, float const *, int, float const *, int, float, float*, int)",170677,634283
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=16, int=16, int=1, int=16, int=4>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",0,264
+"Tesla V100-DGXS-16GB (0)","1","23","void gemv2N_kernel_val<float, float, float, int=128, int=8, int=4, int=4, int=1>(float, float, cublasGemv2Params_v2<float, float, float>)",172933,647130
+"Tesla V100-DGXS-16GB (0)","1","23","void add_tensor_kernel_v3<int=2, float, float, int=16, int=16, int=1, int=16, int=4>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",0,152
+"Tesla V100-DGXS-16GB (0)","1","7","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",6328,104
+"Tesla V100-DGXS-16GB (0)","1","7","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",2612,0
+"Tesla V100-DGXS-16GB (0)","1","7","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",496,4
+"Tesla V100-DGXS-16GB (0)","1","7","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",440,1
+"Tesla V100-DGXS-16GB (0)","1","7","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",576,1
+"Tesla V100-DGXS-16GB (0)","1","7","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",580,1
+"Tesla V100-DGXS-16GB (0)","1","7","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",448,0
+"Tesla V100-DGXS-16GB (0)","1","7","cask::computeOffsetsKernel(cask::ComputeOffsetsParams)",224,0
+"Tesla V100-DGXS-16GB (0)","1","43","void cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::sigmoid_func<float>>(cudnnTensorStruct, float const *, cudnn::detail::activation_fw_4d_kernel<float, float, int=128, int=1, int=4, cudnn::detail::sigmoid_func<float>>, cudnnTensorStruct*, float, cudnnTensorStruct*, int, cudnnTensorStruct*)",33097,204
+"Tesla V100-DGXS-16GB (0)","1","43","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=6, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",13707,139
+"Tesla V100-DGXS-16GB (0)","1","43","trt_volta_scudnn_128x128_relu_medium_nn_v1",808407,15043
+"Tesla V100-DGXS-16GB (0)","1","43","trt_volta_scudnn_128x64_relu_small_nn_v1",182632,1540003
+"Tesla V100-DGXS-16GB (0)","1","43","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=6, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",34597,80567
+"Tesla V100-DGXS-16GB (0)","1","43","trt_volta_scudnn_128x64_relu_medium_nn_v1",89163,336561
+"Tesla V100-DGXS-16GB (0)","1","43","trt_volta_scudnn_128x64_relu_medium_nn_v1",20135,158657
+"Tesla V100-DGXS-16GB (0)","1","43","trt_volta_scudnn_128x64_relu_small_nn_v1",30472,109090
+"Tesla V100-DGXS-16GB (0)","1","43","trt_volta_scudnn_128x64_relu_medium_nn_v1",19420,101432
+"Tesla V100-DGXS-16GB (0)","1","43","trt_volta_scudnn_128x64_relu_small_nn_v1",36230,13161
+"Tesla V100-DGXS-16GB (0)","1","43","trt_volta_scudnn_128x64_relu_interior_nn_v1",16335,17202
+"Tesla V100-DGXS-16GB (0)","1","43","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=8, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",2261,168
+"Tesla V100-DGXS-16GB (0)","1","43","void nvinfer1::tiled_pooling::poolCHW_PQT<int=2, int=2, int=2, int=2, int=2, int=32, int=256, int=5, int=1, bool=1, nvinfer1::ITiledPooling::PoolingMode, bool=0>(nvinfer1::TiledPoolingParams)",4,120
+"Tesla V100-DGXS-16GB (0)","1","43","void gemv2T_kernel_val<float, float, float, int=128, int=16, int=2, int=4, bool=0>(int, int, float, float const *, int, float const *, int, float, float*, int)",86030,672623
+"Tesla V100-DGXS-16GB (0)","1","43","void add_tensor_kernel_v3<int=2, float, float, int=16, int=16, int=1, int=16, int=4>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",0,272

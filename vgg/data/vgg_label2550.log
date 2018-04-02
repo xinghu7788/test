@@ -1,0 +1,15 @@
+conv
+relu
+conv
+relu
+conv
+relu
+conv
+relu
+conv
+relu
+conv
+relu
+conv
+relu
+fc

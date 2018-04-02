@@ -1,0 +1,14 @@
+pooling
+pooling
+pooling
+conv
+relu
+conv
+relu
+pooling
+conv
+relu
+conv
+relu
+pooling
+fc

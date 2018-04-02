@@ -1,0 +1,48 @@
+==10449== NVPROF is profiling process 10449, command: python vgg.py vgg11
+==10449== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10449== Profiling application: python vgg.py vgg11
+==10449== Profiling result:
+"Device","Context","Stream","Kernel","dram_write_transactions","dram_read_transactions","l2_write_transactions","l2_read_transactions"
+,,,,,,,
+"TITAN X (Pascal) (0)","1","7","cudnn::maxwell::gemm::computeOffsetsKernel(cudnn::maxwell::gemm::ComputeOffsetsParams)",7228,13,10991,144
+"TITAN X (Pascal) (0)","1","7","maxwell_scudnn_128x64_relu_small_nn",388592,29112,401421,177729
+"TITAN X (Pascal) (0)","1","7","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",394399,401422,401677,403600
+"TITAN X (Pascal) (0)","1","7","void kernelPointwiseApply1<ThresholdUpdateOutputIP<float>, float, unsigned int, int=-2>(TensorInfo<ThresholdUpdateOutputIP<float>, float>, float, float)",394600,401417,401421,401552
+"TITAN X (Pascal) (0)","1","7","void MaxPoolForward<float, float>(int, float const *, int, int, int, int, int, int, int, int, int, int, int, int, int, int, float*, long*)",296226,401414,301069,802912
+"TITAN X (Pascal) (0)","1","7","void cudnn::winograd::generateWinogradTilesKernel<int=0, float, float>(cudnn::winograd::GenerateWinogradTilesParams<float, float>)",10407,8495,16397,14852
+"TITAN X (Pascal) (0)","1","7","maxwell_scudnn_winograd_128x128_ldg1_ldg4_tile148n_nt",215252,278731,200717,2431135
+"TITAN X (Pascal) (0)","1","7","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",193770,200722,200717,202896
+"TITAN X (Pascal) (0)","1","7","void kernelPointwiseApply1<ThresholdUpdateOutputIP<float>, float, unsigned int, int=-2>(TensorInfo<ThresholdUpdateOutputIP<float>, float>, float, float)",194787,200749,200717,201004
+"TITAN X (Pascal) (0)","1","7","void MaxPoolForward<float, float>(int, float const *, int, int, int, int, int, int, int, int, int, int, int, int, int, int, float*, long*)",146281,200810,150541,402044
+"TITAN X (Pascal) (0)","1","7","void cudnn::winograd::generateWinogradTilesKernel<int=0, float, float>(cudnn::winograd::GenerateWinogradTilesParams<float, float>)",51061,37123,65549,54743
+"TITAN X (Pascal) (0)","1","7","maxwell_scudnn_winograd_128x128_ldg1_ldg4_tile148n_nt",130779,355756,143373,2730638
+"TITAN X (Pascal) (0)","1","7","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",95639,100488,101389,104020
+"TITAN X (Pascal) (0)","1","7","void kernelPointwiseApply1<ThresholdUpdateOutputIP<float>, float, unsigned int, int=-2>(TensorInfo<ThresholdUpdateOutputIP<float>, float>, float, float)",94294,100397,100365,100652
+"TITAN X (Pascal) (0)","1","7","void cudnn::winograd::generateWinogradTilesKernel<int=0, float, float>(cudnn::winograd::GenerateWinogradTilesParams<float, float>)",121802,73897,131085,107496
+"TITAN X (Pascal) (0)","1","7","maxwell_scudnn_winograd_128x128_ldg1_ldg4_tile148n_nt",130528,711591,143373,5473186
+"TITAN X (Pascal) (0)","1","7","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",95577,100487,101389,104020
+"TITAN X (Pascal) (0)","1","7","void kernelPointwiseApply1<ThresholdUpdateOutputIP<float>, float, unsigned int, int=-2>(TensorInfo<ThresholdUpdateOutputIP<float>, float>, float, float)",93528,100361,100365,100496
+"TITAN X (Pascal) (0)","1","7","void MaxPoolForward<float, float>(int, float const *, int, int, int, int, int, int, int, int, int, int, int, int, int, int, float*, long*)",70954,100358,75277,200800
+"TITAN X (Pascal) (0)","1","7","void cudnn::winograd::generateWinogradTilesKernel<int=0, float, float>(cudnn::winograd::GenerateWinogradTilesParams<float, float>)",250738,147768,262157,213889
+"TITAN X (Pascal) (0)","1","7","maxwell_scudnn_winograd_128x128_ldg1_ldg4_tile148n_nt",141310,905012,64525,2859128
+"TITAN X (Pascal) (0)","1","7","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",43571,50198,50189,52368
+"TITAN X (Pascal) (0)","1","7","void kernelPointwiseApply1<ThresholdUpdateOutputIP<float>, float, unsigned int, int=-2>(TensorInfo<ThresholdUpdateOutputIP<float>, float>, float, float)",44240,50221,50189,50476
+"TITAN X (Pascal) (0)","1","7","void cudnn::winograd::generateWinogradTilesKernel<int=0, float, float>(cudnn::winograd::GenerateWinogradTilesParams<float, float>)",513728,295773,524301,427730
+"TITAN X (Pascal) (0)","1","7","maxwell_scudnn_winograd_128x128_ldg1_ldg4_tile148n_nt",141464,1796146,64525,5718524
+"TITAN X (Pascal) (0)","1","7","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",43459,50222,50189,52368
+"TITAN X (Pascal) (0)","1","7","void kernelPointwiseApply1<ThresholdUpdateOutputIP<float>, float, unsigned int, int=-2>(TensorInfo<ThresholdUpdateOutputIP<float>, float>, float, float)",39198,50221,50189,50476
+"TITAN X (Pascal) (0)","1","7","void MaxPoolForward<float, float>(int, float const *, int, int, int, int, int, int, int, int, int, int, int, int, int, int, float*, long*)",33958,50182,37645,120160
+"TITAN X (Pascal) (0)","1","7","void cudnn::winograd::generateWinogradTilesKernel<int=0, float, float>(cudnn::winograd::GenerateWinogradTilesParams<float, float>)",506489,295750,524301,427374
+"TITAN X (Pascal) (0)","1","7","maxwell_scudnn_winograd_128x128_ldg1_ldg4_tile148n_nt",39241,676377,14349,1292728
+"TITAN X (Pascal) (0)","1","7","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",4546,12710,12813,15444
+"TITAN X (Pascal) (0)","1","7","void kernelPointwiseApply1<ThresholdUpdateOutputIP<float>, float, unsigned int, int=-2>(TensorInfo<ThresholdUpdateOutputIP<float>, float>, float, float)",7155,12553,12557,12688
+"TITAN X (Pascal) (0)","1","7","void cudnn::winograd::generateWinogradTilesKernel<int=0, float, float>(cudnn::winograd::GenerateWinogradTilesParams<float, float>)",512882,295387,524301,426599
+"TITAN X (Pascal) (0)","1","7","maxwell_scudnn_winograd_128x128_ldg1_ldg4_tile148n_nt",43308,673748,14349,1292248
+"TITAN X (Pascal) (0)","1","7","void add_tensor_kernel_v3<int=2, float, float, int=128, int=1, int=1, int=4, int=2>(cudnnTensorStruct, float*, cudnnTensorStruct, float const *, float, float)",8153,12626,12813,15008
+"TITAN X (Pascal) (0)","1","7","void kernelPointwiseApply1<ThresholdUpdateOutputIP<float>, float, unsigned int, int=-2>(TensorInfo<ThresholdUpdateOutputIP<float>, float>, float, float)",3579,12589,12557,12844
+"TITAN X (Pascal) (0)","1","7","void MaxPoolForward<float, float>(int, float const *, int, int, int, int, int, int, int, int, int, int, int, int, int, int, float*, long*)",2710,12650,9421,38716
+"TITAN X (Pascal) (0)","1","7","void gemv2T_kernel_val<float, float, float, int=128, int=16, int=2, int=4, bool=0>(int, int, float, float const *, int, float const *, int, float, float*, int)",43435,12852027,2061,14453380
+"TITAN X (Pascal) (0)","1","7","void kernelPointwiseApply1<ThresholdUpdateOutputIP<float>, float, unsigned int, int=-2>(TensorInfo<ThresholdUpdateOutputIP<float>, float>, float, float)",36,33,525,656
+"TITAN X (Pascal) (0)","1","7","void gemv2T_kernel_val<float, float, float, int=128, int=16, int=2, int=4, bool=0>(int, int, float, float const *, int, float const *, int, float, float*, int)",39679,2098739,2061,2361572
+"TITAN X (Pascal) (0)","1","7","void kernelPointwiseApply1<ThresholdUpdateOutputIP<float>, float, unsigned int, int=-2>(TensorInfo<ThresholdUpdateOutputIP<float>, float>, float, float)",20,17,525,656
+"TITAN X (Pascal) (0)","1","7","void gemv2T_kernel_val<float, float, float, int=128, int=16, int=2, int=4, bool=0>(int, int, float, float const *, int, float const *, int, float, float*, int)",39513,512688,513,576712

@@ -1,0 +1,48 @@
+1. random_vgg.py: 
+- generate vgg like graph randomly
+- python random_vgg.py #
+- ‘#’ represents the number of graphs want to generate
+(the description of how to generate graph is in the file)
+
+2. read_vgg.py(you do not need this file):
+- read the vgg graph 
+- python read_vgg.py #
+- ‘#’ represents which graph want to read
+
+3. vgg_generator.py:
+- run the graph on gpu
+- python generator.py #
+- ‘#’ represents which graph want to run
+
+4. read_vgg_sequence.py:
+- get the label of each graph
+- python read_vgg_sequence.py #
+- ‘#’ represents which graph label want to get
+(the description of label is in the file)
+
+test set:
+1. vgg.py:
+- run test vgg graph on gnu
+- python vgg.py #
+- ‘#’ represents graph name:
+	vgg11
+	vgg11_bn
+	vgg13
+	vgg13_bn
+	vgg16
+	vgg16_bn
+	vgg19
+	vgg19_bn
+
+2.vgg_label:
+- get the label of test vgg
+- python vgg_label.py #
+- ‘#’ represents graph name:
+	vgg11
+	vgg11_bn
+	vgg13
+	vgg13_bn
+	vgg16
+	vgg16_bn
+	vgg19
+	vgg19_bn
