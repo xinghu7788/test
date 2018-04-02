@@ -1,0 +1,57 @@
+==1735== NVPROF is profiling process 1735, command: python resnet.py resnet10
+==1735== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1735== Profiling application: python resnet.py resnet10
+==1735== Profiling result:
+         Device          Context           Stream                Kernel  dram_write_transactions  dram_read_transactions
+
+ Tesla K40c (0)                1                7  void im2col4d_kernel                   230496                   18870
+ Tesla K40c (0)                1                7  cudnn_convolve_sgemm                   100353                  232181
+ Tesla K40c (0)                1                7  void cudnn::detail::                   100353                  100421
+ Tesla K40c (0)                1                7  void kernelPointwise                   100353                  100385
+ Tesla K40c (0)                1                7  void MaxPoolForward<                    75264                  100542
+ Tesla K40c (0)                1                7  void cudnn::detail::                    99763                   30098
+ Tesla K40c (0)                1                7  void cudnn::detail::                    25089                   25145
+ Tesla K40c (0)                1                7  void kernelPointwise                    25088                   25112
+ Tesla K40c (0)                1                7  void cudnn::detail::                    99298                   30091
+ Tesla K40c (0)                1                7  void cudnn::detail::                    25089                   25153
+ Tesla K40c (0)                1                7  void kernelPointwise                    25089                   50190
+ Tesla K40c (0)                1                7  void kernelPointwise                    25088                   25112
+ Tesla K40c (0)                1                7  void kern_precompute                       73                      26
+ Tesla K40c (0)                1                7  cudnn_convolve_preco                    52770                   34356
+ Tesla K40c (0)                1               13  void cudnn::detail::                     2049                   10498
+ Tesla K40c (0)                1               15  void cudnn::detail::                     3456                   13135
+ Tesla K40c (0)                1                7  void cudnn::detail::                    12545                   12633
+ Tesla K40c (0)                1                7  void kernelPointwise                    12544                   12568
+ Tesla K40c (0)                1                7  void im2col4d_kernel                   112898                   12678
+ Tesla K40c (0)                1                7  cudnn_convolve_sgemm                    12546                  137523
+ Tesla K40c (0)                1                7  void cudnn::detail::                    12544                   12657
+ Tesla K40c (0)                1                7  void kern_precompute                        9                      50
+ Tesla K40c (0)                1                7  void cudnn::detail::                    50148                   13915
+ Tesla K40c (0)                1                7  void cudnn::detail::                    12545                   12633
+ Tesla K40c (0)                1                7  void kernelPointwise                    12546                   25102
+ Tesla K40c (0)                1                7  void kernelPointwise                    12544                   12592
+ Tesla K40c (0)                1                7  void cudnn::detail::                    27698                   49794
+ Tesla K40c (0)                1                7  void cudnn::detail::                     6767                    6433
+ Tesla K40c (0)                1                7  void kernelPointwise                     6273                    6304
+ Tesla K40c (0)                1                7  void im2col4d_kernel                    63126                    6311
+ Tesla K40c (0)                1                7  cudnn_convolve_sgemm                     9378                  130833
+ Tesla K40c (0)                1                7  void cudnn::detail::                     6760                    6425
+ Tesla K40c (0)                1                7  void kern_precompute                       16                      26
+ Tesla K40c (0)                1                7  cudnn_convolve_preco                    26864                   11701
+ Tesla K40c (0)                1                7  void cudnn::detail::                     6769                    6425
+ Tesla K40c (0)                1                7  void kernelPointwise                     6272                   12567
+ Tesla K40c (0)                1                7  void kernelPointwise                     6272                    6296
+ Tesla K40c (0)                1                7  void im2col4d_kernel                    18131                    6310
+ Tesla K40c (0)                1                7  cudnn_convolve_sgemm                     4926                  162233
+ Tesla K40c (0)                1                7  void cudnn::detail::                     3267                    3425
+ Tesla K40c (0)                1                7  void kernelPointwise                     3138                    3169
+ Tesla K40c (0)                1                7  void im2col4d_kernel                    36159                    3666
+ Tesla K40c (0)                1                7  cudnn_convolve_sgemm                     4918                  323585
+ Tesla K40c (0)                1                7  void cudnn::detail::                     3217                    3413
+ Tesla K40c (0)                1                7  void kern_precompute                       37                      34
+ Tesla K40c (0)                1                7  cudnn_convolve_preco                    14592                   21628
+ Tesla K40c (0)                1                7  void cudnn::detail::                     3248                    3413
+ Tesla K40c (0)                1                7  void kernelPointwise                     3136                    6295
+ Tesla K40c (0)                1                7  void kernelPointwise                     3136                    3168
+ Tesla K40c (0)                1                7  void AvePoolForward<                       64                    3197
+ Tesla K40c (0)                1                7  void gemv2T_kernel_v                      129                   64287
